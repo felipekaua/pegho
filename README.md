@@ -3,7 +3,6 @@
 1. Clonar o projeto
 
 ```
-//git clone <link do repositório>
 git clone git@github.com:felipekaua/pegho.git
 ```
 2. Rodar Docker
