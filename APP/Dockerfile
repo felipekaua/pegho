@@ -1,6 +1,6 @@
-FROM node:18-alpine
+FROM node:16
 
-WORKDIR /reactApp
+WORKDIR /app
 
 COPY package*.json ./
 
@@ -10,4 +10,4 @@ COPY . .
 
 EXPOSE 8080
 
-CMD [ "npm", "run", "dev" ]
+CMD ["npm", "run", "dev"]

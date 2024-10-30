@@ -3,20 +3,22 @@ version: '3.8'
 services:
   react-app:
     build:
-      context: ./APP
+      context: ./APP 
     ports:
       - "8080:8080"
     volumes:
       - ./APP:/reactApp
+      - ./APP:/reactApp/node_modules
+    command: "npm run dev" 
     environment:
       - NODE_ENV=development
 
   django-api:
     build:
-      context: ./API
+      context: ./API 
     ports:
       - "8000:8000"
     volumes:
-      - ./API:/app
+      - ./API:/app 
     environment:
-      - DJANGO_ENV=development
+      - DJANGO_ENV=development 
