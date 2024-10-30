@@ -17,4 +17,7 @@ http://localhost:8080/
 4. Acessar área admin Django
 ```
 http://localhost:8000/admin
+
+Username: admin
+Password: admin
 ```
