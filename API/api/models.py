@@ -1,14 +1,17 @@
+from django.core.exceptions import ValidationError
 from django.db import models
 from django.contrib.auth.models import User
+import re
+from datetime import date
 
 class Resume(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE, primary_key=True)
     name = models.CharField(max_length=100)
     birth_date = models.DateField()
     email = models.EmailField(max_length=100)
-    phone = models.CharField(max_length=100)
+    phone = models.IntegerField()
     address = models.CharField(max_length=255)
-
+    
     def __str__(self):
         return self.name
 
@@ -27,6 +30,6 @@ class Formation(models.Model):
     course = models.CharField(max_length=100) 
     institute = models.CharField(max_length=100)  
     semester = models.IntegerField()
-
+    
     def __str__(self):
         return self.course

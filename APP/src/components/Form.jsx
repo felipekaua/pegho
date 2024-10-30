@@ -28,7 +28,7 @@ function Form({ route, method }) {
                 navigate("/login")
             }
         } catch (error) {
-            alert(error)
+            alert(error.code)
         } finally {
             setLoading(false)
         }

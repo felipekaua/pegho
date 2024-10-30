@@ -1,0 +1,89 @@
+  .resume-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    max-width: 80%;
+    margin: auto;
+  }
+  .resume-data{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .resume-data div{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    width: 49%;
+    margin-right: 1%;
+  }
+
+  .resume-data input{
+    width: 50%;
+  }
+  
+  .resume-container label {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .resume-container input{
+    padding: 8px;
+    margin: 8px 0 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .resume-container input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: fit-content;
+  }
+  
+  .resume-container input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+
+  .resume-container button {
+    width: 250px;
+    background-color: #ffffff;
+    color: #000;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: 2px #bbbbbb solid;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .resume-container button:hover {
+    background-color: #bbbbbb;
+  }
+
+  .item-container{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 20px;
+    width: 80%;
+    margin: auto;
+  }
+
+  .item{
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+    margin-bottom: 1px;
+  }
+
+  .delete{
+    background-color: rgb(116, 0, 0);
+  }
+  .delete:hover{
+    background-color: red;
+  }
